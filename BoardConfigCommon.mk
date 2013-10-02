@@ -32,7 +32,7 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno320
 #TARGET_QCOM_MEDIA_VARIANT := caf
 
 # Inline kernel building
-TARGET_KERNEL_SOURCE := kernel/motorola/msm8960dt-common
+TARGET_KERNEL_SOURCE := kernel/motorola/msm8960dt
 TARGET_KERNEL_CONFIG := msm8960_mmi_defconfig
 TARGET_KERNEL_SELINUX_CONFIG := msm8960_mmi_selinux_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 maxcpus=2 vmalloc=400M androidboot.write_protect=0
