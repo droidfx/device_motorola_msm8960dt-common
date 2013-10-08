@@ -2,6 +2,7 @@
 bin/adspd
 bin/ap_gain.bin
 bin/ap_gain_mmul.bin
+bin/ATFWD-daemon
 bin/bootmodem
 bin/charge_only_mode
 bin/defuse
@@ -9,6 +10,7 @@ bin/diag_klog
 bin/diag_mdlog
 bin/efsks
 bin/hardware_revisions.sh
+bin/irsc_util
 bin/ks
 bin/moto_com.sh
 bin/moto_com_post.sh
@@ -27,6 +29,7 @@ bin/thermald
 # HAL
 lib/hw/audio.motvr.msm8960.so
 lib/hw/camera.msm8960.so
+lib/hw/gps.default.so
 lib/hw/nfc.MSM8960.so
 lib/hw/sensorhub.msm8960.so
 lib/hw/sensors.msm8960.so
@@ -50,6 +53,7 @@ lib/libdsucsd.so
 lib/libdsutils.so
 lib/libDxHdcp.so
 lib/libgemini.so
+lib/libgps.utils.so
 lib/libI420colorconvert.so
 lib/libidl.so
 lib/libimage-jpeg-dec-omx-comp.so
