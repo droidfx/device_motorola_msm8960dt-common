@@ -39,7 +39,6 @@ on init
     mkdir /storage/emulated 0555 root root
 
     #External storage directories
-    mkdir /storage/emulated/legacy 0555 root root
     mkdir /storage/sdcard1 0000 system system
     mkdir /storage/usbdisk 0755 system system
 
@@ -51,6 +50,7 @@ on init
     symlink /storage/emulated/legacy /sdcard
     symlink /storage/emulated/legacy /mnt/sdcard
     symlink /storage/emulated/legacy /storage/sdcard0
+    symlink /mnt/shell/emulated/0 /storage/emulated/legacy
     symlink /storage/usbdisk /usbdisk
     symlink /storage/usbdisk /mnt/usbdisk
 
@@ -435,12 +435,6 @@ service wifi-crda /system/bin/sh /system/etc/init.crda.sh
 
 on property:sys.boot_completed=1
     start qcom-post-boot
-
-service atfwd /system/bin/ATFWD-daemon
-    class late_start
-    user system
-    group system radio
-    onrestart exec /system/bin/log -t RIL-ATFWD -p w "ATFWD daemon restarted"
 
 service hostapd /system/bin/hostapd -dd /data/misc/wifi/hostapd.conf
     class late_start
