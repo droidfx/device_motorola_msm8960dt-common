@@ -2,6 +2,7 @@
 bin/adspd
 bin/ap_gain.bin
 bin/ap_gain_mmul.bin
+bin/batt_health
 bin/bootmodem
 bin/charge_only_mode
 bin/diag_klog
@@ -72,7 +73,6 @@ lib/libmmrtpencoder.so
 lib/libmmstillomx.so
 lib/libmotext_inf.so
 lib/libmot_sensorlistener.so
-lib/libnfcpn544c3_fw.so
 lib/libpn544_fw.so
 lib/libqcci_legacy.so
 lib/libqdi.so
