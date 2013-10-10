@@ -33,13 +33,13 @@ on init
 
     # Set permissions for persist partition
     mkdir /persist 0771 system system
+
     # See storage config details at http://source.android.com/tech/storage/
     mkdir /mnt/shell/emulated 0700 shell shell
     mkdir /storage 0550 system sdcard_r
     mkdir /storage/emulated 0555 root root
 
     #External storage directories
-    mkdir /storage/sdcard1 0000 system system
     mkdir /storage/usbdisk 0755 system system
 
     export EXTERNAL_STORAGE /storage/emulated/legacy
