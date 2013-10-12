@@ -115,4 +115,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Telephony
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.ril.v3=qcomdsds
+    ro.telephony.ril.v3=qcomdsds \
+    persist.radio.no_wait_for_card=1 \
+    persist.radio.call_type=1 \
+    persist.radio.apm_sim_not_pwdn=1
