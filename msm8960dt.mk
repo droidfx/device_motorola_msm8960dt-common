@@ -92,6 +92,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     hw.trueMirrorSupported=1
 
+# Bluetooth LE
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.enable-player=true \
