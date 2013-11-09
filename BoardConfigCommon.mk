@@ -60,14 +60,6 @@ TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
-# Liblights
-TARGET_USES_MOTOROLA_MSM8960_COMMON_LIBLIGHT := true
-
-# NFC
-BOARD_HAVE_NFC := true
-
-#TWRP
-DEVICE_RESOLUTION := 720x1280
-
-# userdata size is double for maxx
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 12884901888
+# TWRP
+TW_BRIGHTNESS_PATH := /sys/devices/virtual/graphics/fb0/lcd-backlight/brightness
+TW_MAX_BRIGHTNESS := 255
